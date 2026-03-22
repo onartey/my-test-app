@@ -47,7 +47,7 @@ jobs:
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
         
       #  Debug scan version
-      - name: SonarCloud Scan (Debug)
-        run: npx sonar-scanner -X
-        env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+     # - name: SonarCloud Scan (Debug)
+       # run: npx sonar-scanner -X
+       # env:
+       #   SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
