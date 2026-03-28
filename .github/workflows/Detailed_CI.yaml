@@ -56,7 +56,7 @@ jobs:
   # Job 3: Test
   # ==========================
   job3_test:
-    name: Job 3: Run Tests 🟦
+    name:  Run Tests 🟦
     runs-on: ubuntu-latest
     needs: job2_setup
     steps:
@@ -73,7 +73,7 @@ jobs:
   # Job 4: Security Scan
   # ==========================
   job4_security:
-    name: Job 4: Security & Secret Scans 🟦
+    name:  Security & Secret Scans 🟦
     runs-on: ubuntu-latest
     needs: job3_test
 
@@ -101,7 +101,7 @@ jobs:
   # Job 5: Code Quality
   # ==========================
   job5_code_quality:
-    name: Job 5: Static Code Analysis 🟦
+    name:  Static Code Analysis 🟦
     runs-on: ubuntu-latest
     needs: job3_test
     steps:
@@ -125,7 +125,7 @@ jobs:
   # Job 6: Build / Package
   # ==========================
   job6_build:
-    name: Job 6: Build / Package 🟦
+    name: Build / Package 🟦
     runs-on: ubuntu-latest
     needs: job5_code_quality
 
